@@ -1,8 +1,8 @@
 {
-  "name": "@keminghe/npm-template",
-  "version": "1.0.6",
+  "name": "@keminghe/tsutils",
+  "version": "0.1.0",
   "type": "module",
-  "description": "Template for creating TypeScript utility packages for publishing to NPM registry. MIT license.",
+  "description": "TypeScript-first utility library for modular code organization and management.",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -36,7 +36,7 @@
   },
   "keywords": [
     "typescript",
-    "template"
+    "utility"
   ],
   "author": {
     "name": "Keming He",
@@ -44,13 +44,13 @@
     "url": "https://www.linkedin.com/in/keminghe/"
   },
   "license": "MIT",
-  "homepage": "https://www.npmjs.com/package/@keminghe/npm-template",
+  "homepage": "https://www.npmjs.com/package/@keminghe/tsutils",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KemingHe/npm-template.git"
+    "url": "git+https://github.com/KemingHe/tsutils.git"
   },
   "bugs": {
-    "url": "https://github.com/KemingHe/npm-template/issues/new",
+    "url": "https://github.com/KemingHe/tsutils/issues/new",
     "email": "keminghe.career@gmail.com"
   },
   "devDependencies": {
@@ -63,7 +63,7 @@
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^9.1.7",
     "tsup": "^8.4.0",
-    "typescript": "^5.7.3",
+    "typescript": "^5.8.2",
     "vite-tsconfig-paths": "^5.1.4",
     "vitest": "^3.0.7"
   },

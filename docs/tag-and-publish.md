@@ -23,30 +23,23 @@ git config --global tag.gpgSign true
 2. Create and sign a Git tag based on latest version documentation:
 
 ```bash
-git tag -s v1.0.5 -m "First Release v1.0.5
+git tag -s v1.0.0 -m "Release v1.0.0
 
 Major Changes:
 - Initial setup with complete CI/CD pipeline, documentation, testing, and version management
-- Fully configured template for npm package development
-
-Notable Changes:
-- Simplified package name to npm-template
-- Updated workflows and configurations
-- Added Biome formatter configurations
-- Improved documentation and badges
-- Package naming convention updates for best practices"
+"
 ```
 
 3. Push the tag to trigger automatic publish:
 
 ```bash
-git push origin v1.0.5
+git push origin v1.0.0
 ```
 
 4. Verify the tag signature (optional):
 
 ```bash
-git verify-tag v1.0.5
+git verify-tag v1.0.0
 ```
 
 ## What Happens Next

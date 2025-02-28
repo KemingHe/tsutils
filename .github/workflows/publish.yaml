@@ -10,6 +10,7 @@ concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
   publish:
+    if: github.repository == 'KemingHe/tsutils'
     runs-on: ubuntu-latest
     permissions:
       contents: read

@@ -9,7 +9,7 @@ on:
 
 jobs:
   code-quality:
-    if: github.repository == 'KemingHe/npm-template'
+    if: github.repository == 'KemingHe/tsutils'
     runs-on: ubuntu-latest
     permissions:
       contents: read
