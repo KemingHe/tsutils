@@ -1,6 +1,6 @@
 {
   "name": "@keminghe/tsutils",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "type": "module",
   "description": "TypeScript-first utility library for modular code organization and management.",
   "main": "./dist/index.cjs",
