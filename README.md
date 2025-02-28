@@ -1,12 +1,12 @@
-# @keminghe/npm-template
+# @keminghe/tsutils
 
-![npm-template social preview - TypeScript utility package template by KemingHe](https://socialify.git.ci/KemingHe/npm-template/image?description=1&language=1&name=1&owner=1&theme=Light)
+![tsutils social preview - TypeScript utility package by KemingHe](https://socialify.git.ci/KemingHe/tsutils/image?description=1&language=1&name=1&owner=1&theme=Light)
 
-![NPM Version](https://img.shields.io/npm/v/%40keminghe%2Fnpm-template)
-![NPM License](https://img.shields.io/npm/l/%40keminghe%2Fnpm-template)
-[![codecov](https://codecov.io/gh/KemingHe/npm-template/graph/badge.svg?token=ryf67P7bm9)](https://codecov.io/gh/KemingHe/npm-template)
+![NPM Version](https://img.shields.io/npm/v/%40keminghe%2Ftsutils)
+![NPM License](https://img.shields.io/npm/l/%40keminghe%2Ftsutils)
+[![codecov](https://codecov.io/gh/KemingHe/tsutils/graph/badge.svg?token=zipOygWCTa)](https://codecov.io/gh/KemingHe/tsutils)
 
-Template for creating TypeScript utility packages for publishing to NPM registry. Social preview generated with [Socialify](https://socialify.git.ci).
+TypeScript-first utility library for modular code organization and management. Social preview generated with [Socialify](https://socialify.git.ci).
 
 ## ⭐ Features
 
@@ -17,7 +17,7 @@ Template for creating TypeScript utility packages for publishing to NPM registry
 ## 📥 Installation
 
 ```bash
-npm install @keminghe/npm-template
+npm install @keminghe/tsutils
 ```
 
 ## 🚀 Usage
@@ -25,7 +25,7 @@ npm install @keminghe/npm-template
 ### Environment Variable Utility
 
 ```typescript
-import { env } from '@keminghe/npm-template';
+import { env } from '@keminghe/tsutils';
 
 // Basic usage
 // Throws runtime error if API_KEY is missing or empty
@@ -41,24 +41,13 @@ const port: string = env('PORT', {
 ### String Validation
 
 ```typescript
-import { isNonEmptyString } from '@keminghe/npm-template';
+import { isNonEmptyString } from '@keminghe/tsutils';
 
 const value = 'hello';
 if (isNonEmptyString(value)) {
   // TypeScript knows value is string here
   console.log(value.toUpperCase());
 }
-```
-
-### _Your Custom Utility_
-
-```typescript
-// Add your utility functions here
-// Follow similar pattern for type safety and validation
-import { YourUtility } from './your-module';
-
-// Document clear usage examples
-const result = YourUtility.process('input');
 ```
 
 ## 📚 API
@@ -113,37 +102,18 @@ if (isNonEmptyString(input)) {
 }
 ```
 
-### _Your Custom API_
-
-_Document your new functions following this format:_
-
-```typescript
-/**
- * Brief description of what the function does
- * @param paramName - Parameter description
- * @returns What the function returns
- * @throws Error conditions if applicable
- */
-function yourFunction(paramName: ParamType): ReturnType {
-  // Implementation
-}
-```
-
 ## ⚙️ Development
 
 ```bash
 pnpm install  # Install dependencies
-
 pnpm test     # Run tests
-
 pnpm build    # Build package
-
 pnpm verify   # Full verification
 ```
 
 ## 🏷️ Release Process
 
-See [Tag and Publish Guide](https://github.com/KemingHe/npm-template/blob/main/docs/tag-and-publish.md) for detailed instructions on:
+See [Tag and Publish Guide](https://github.com/KemingHe/tsutils/blob/main/docs/tag-and-publish.md) for detailed instructions on:
 
 - Setting up GPG signing
 - Creating signed Git tags
@@ -159,6 +129,6 @@ See [Tag and Publish Guide](https://github.com/KemingHe/npm-template/blob/main/d
 
 ## 📄 License
 
-[MIT License](https://github.com/KemingHe/npm-template/blob/main/LICENSE)
+[MIT License](https://github.com/KemingHe/tsutils/blob/main/LICENSE)
 
 Copyright 2025 [Keming He](http://linkedin.com/in/keminghe)
