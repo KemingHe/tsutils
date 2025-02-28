@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    // Build Environment & Compatibility
+    "target": "es2018", // Support Node.js 10+ and modern browsers
+    "lib": [
+      "es2018",
+      "es2019.array", // Array#flat, Array#flatMap
+      "es2020.promise", // Promise.allSettled
+      "es2020.string" // String#replaceAll
+    ],
+    "types": ["vitest/globals"], // Include test globals
+    "module": "esnext", // Use modern ES modules
+    "moduleResolution": "bundler", // Modern module resolution strategy
+
+    // Path Resolution
+    "baseUrl": ".", // Enable absolute imports
+    "paths": {
+      "@/*": ["*"] // Map '@/' to project root
+    },
+
+    // Type Safety & Correctness
+    "strict": true, // Enable all strict type checking
+    "isolatedModules": true, // Ensure compatibility with transpilers
+    "verbatimModuleSyntax": true, // Enforce explicit imports/exports
+    "forceConsistentCasingInFileNames": true,
+
+    // Module Interop
+    "esModuleInterop": true, // Simplified imports from CommonJS modules
+    "resolveJsonModule": true, // Allow importing JSON files
+    "allowSyntheticDefaultImports": true,
+
+    // Emit Configuration
+    "declaration": true, // Generate .d.ts files
+    "declarationMap": true, // Enable source maps for declarations
+    "noEmit": true, // Rely on tsup for emission
+
+    // Performance
+    "skipLibCheck": true // Skip type checking of node_modules
+  },
+  "exclude": ["node_modules", "dist"]
+}

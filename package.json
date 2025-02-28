@@ -1,0 +1,77 @@
+{
+  "name": "@keminghe/npm-template",
+  "version": "1.0.6",
+  "type": "module",
+  "description": "Template for creating TypeScript utility packages for publishing to NPM registry. MIT license.",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "prepare": "husky",
+    "lint": "biome ci .",
+    "lint:fix": "biome check --write .",
+    "test:unit": "vitest",
+    "test:unit:coverage": "vitest --coverage.enabled",
+    "test:unit:update-snapshots": "vitest --update",
+    "test": "pnpm test:unit:coverage",
+    "check:changesets": "changeset status",
+    "check:types": "tsc",
+    "build": "tsup",
+    "verify": "pnpm check:changesets && pnpm lint && pnpm check:types && pnpm test && pnpm build"
+  },
+  "keywords": [
+    "typescript",
+    "template"
+  ],
+  "author": {
+    "name": "Keming He",
+    "email": "keminghe.career@gmail.com",
+    "url": "https://www.linkedin.com/in/keminghe/"
+  },
+  "license": "MIT",
+  "homepage": "https://www.npmjs.com/package/@keminghe/npm-template",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KemingHe/npm-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KemingHe/npm-template/issues/new",
+    "email": "keminghe.career@gmail.com"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@changesets/changelog-github": "^0.5.1",
+    "@changesets/cli": "^2.28.1",
+    "@types/node": "^22.13.5",
+    "@vitest/coverage-v8": "^3.0.7",
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^9.1.7",
+    "tsup": "^8.4.0",
+    "typescript": "^5.7.3",
+    "vite-tsconfig-paths": "^5.1.4",
+    "vitest": "^3.0.7"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@biomejs/biome",
+      "esbuild"
+    ]
+  },
+  "packageManager": "pnpm@10.5.2+sha512.da9dc28cd3ff40d0592188235ab25d3202add8a207afbedc682220e4a0029ffbff4562102b9e6e46b4e3f9e8bd53e6d05de48544b0c57d4b0179e22c76d1199b"
+}

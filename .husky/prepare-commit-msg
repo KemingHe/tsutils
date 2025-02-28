@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# Use commitizen with conventional-changelog, 
+# fallback to default editor if not available.
+exec < /dev/tty && pnpm cz --hook || true
