@@ -1,4 +1,11 @@
-# @keminghe/tsutils
+# ⚠️ [Archived] ⚠️ @keminghe/tsutils
+
+> [!WARNING]
+> **This repository is archived and no longer maintained.**
+>
+> - **Archived**: 2025-08-10 by [@KemingHe](https://github.com/KemingHe)
+> - **Archive reason**: moved on to more focused agentic AI development
+> - **Inquries and corrections**: email [keminghe.career@gmail.com](mailto:keminghe.career@gmail.com)
 
 ![tsutils social preview - TypeScript utility package by KemingHe](https://socialify.git.ci/KemingHe/tsutils/image?description=1&language=1&name=1&owner=1&theme=Light)
 
